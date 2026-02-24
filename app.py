@@ -37,8 +37,9 @@ with tab1:
 
     st.markdown("<br>", unsafe_allow_html=True)
     # ---- SCROLLABLE CHAT ----
-    chat_container = st.container(height=400)
-
+    chat_container = st.container(height=380)
+    if not st.session_state.messages:
+        st.info("Say something ordinary and let chaos respond.")
     with chat_container:
         for msg in st.session_state.messages:
             with st.chat_message(msg["role"]):
@@ -48,7 +49,7 @@ with tab1:
 
     with col1:
         st.progress(st.session_state.chaos_level / 10)
-        st.caption(f"Chaos Level: {st.session_state.chaos_level} / 10")
+        st.markdown(f"**Chaos Level:** {st.session_state.chaos_level} / 10")
     with col2:
         if st.button("Reset"):
             st.session_state.messages = []
