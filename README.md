@@ -122,6 +122,6 @@ Built as part of hands-on experimentation with Streamlit and applied AI system d
 
 ## 🔥 Chaos Reactor Preview
 
-<img src="assets/chaos-reactor.png" width="70%">
+![Chaos Reactor - Initial State](assets/chaos-reactor.png)
 
-<img src="assets/bored-chaos-reactor.png" width="70%">
+![Chaos Reactor - Example Response](assets/bored-chaos-reactor.png)
