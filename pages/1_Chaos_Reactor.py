@@ -1,10 +1,13 @@
 import streamlit as st
 from utils.chaos import generate_chaos_response
 from utils.sentiment import predict_sentiment
+from utils.style import inject_global_style
 
-st.set_page_config(page_title="Chaos Reactor", layout="wide")
+st.set_page_config(page_title="Emotion Amplification Engine", layout="wide")
+inject_global_style()
 
-st.title("🔥 Chaos Reactor")
+st.markdown("## 🔥 Emotion Amplification Engine")
+st.caption("State-driven emotional modulation powered by sentiment analysis.")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []

@@ -1,13 +1,21 @@
 import streamlit as st
+from utils.style import inject_global_style
 
-st.set_page_config(page_title="AI Playground", layout="wide")
 
-st.title("🧪 AI Playground")
+# MUST be first Streamlit command
+st.set_page_config(page_title="Hybrid Intelligence Lab", layout="wide")
+inject_global_style()
+
+st.title("🧠 Hybrid Intelligence Lab")
+
 st.markdown("""
-Welcome to the AI Playground.
+    An interactive system demonstrating how classical NLP,
+    stateful logic, and LLM conditioning can work together.
 
-Use the sidebar to navigate between modules:
-- 🔥 Chaos Reactor
-- 😊 Sentiment Analyzer
-- 📊 Data Explorer
-""")
+    Explore:
+    - 🔥 Emotion Amplification Engine  
+    - 😊 Sentiment Analysis Module  
+    - 📊 Data Intelligence Toolkit  
+    """)
+st.markdown("---")
+st.caption("Hybrid Intelligence Lab • ML + LLM Demonstration Project")
