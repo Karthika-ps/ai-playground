@@ -3,10 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from utils.sentiment import predict_sentiment
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from utils.style import inject_global_style
+from utils.style import apply_global_style
 
 st.set_page_config(page_title="Sentiment Analysis Engine", layout="wide")
-inject_global_style()
+apply_global_style()
 
 st.markdown("## 😊 Sentiment Analysis Engine")
 st.caption("Lexicon-based polarity detection using VADER.")

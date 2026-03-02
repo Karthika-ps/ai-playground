@@ -1,10 +1,10 @@
 import streamlit as st
-from utils.chaos import generate_chaos_response
+from utils.llm_engine  import generate_chaos_response
 from utils.sentiment import predict_sentiment
-from utils.style import inject_global_style
+from utils.style import apply_global_style
 
 st.set_page_config(page_title="Emotion Amplification Engine", layout="wide")
-inject_global_style()
+apply_global_style()
 
 st.markdown("## 🔥 Emotion Amplification Engine")
 st.caption("State-driven emotional modulation powered by sentiment analysis.")

@@ -1,10 +1,10 @@
 import streamlit as st
-from utils.style import inject_global_style
+from utils.style import apply_global_style
 
 
 # MUST be first Streamlit command
 st.set_page_config(page_title="Hybrid Intelligence Lab", layout="wide")
-inject_global_style()
+apply_global_style()
 
 st.title("🧠 Hybrid Intelligence Lab")
 

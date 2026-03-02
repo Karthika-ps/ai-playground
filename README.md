@@ -1,86 +1,78 @@
-# 🧪 AI Playground
+# 🧠 Hybrid Intelligence Lab
 
-A multi-tab Streamlit application demonstrating hybrid AI system design combining:
-
-- Classical NLP (VADER Sentiment Analysis)
-- LLM-based text generation (OpenAI)
-- Stateful reactive behavior modeling
-- Modular architecture
-- Interactive UI
+An interactive AI system demonstrating hybrid architecture where
+classical NLP, deterministic state logic, and LLM conditioning
+work together in a controlled reactive pipeline.
 
 Live Demo:
 https://ai-playground-nobodiez.streamlit.app/
 
 ---
 
-## 🔥 Tab 1 — Chaos Reactor
+## 🔥 Module 1 — Emotion Amplification Engine
 
-An emotionally reactive dramatic overreaction engine.
+A state-driven emotional modulation system that dynamically
+conditions LLM responses based on deterministic sentiment analysis.
 
-### How It Works
-
-1. User input is analyzed using VADER sentiment analysis.
-2. Sentiment score dynamically adjusts a "Chaos Level" (1–10).
-3. The LLM is conditioned with:
-   - Current chaos intensity
-   - Detected emotional tone
-4. A theatrical, exaggerated response is generated.
-
-### Architecture
-
+### Processing Pipeline
+```text
 User Input  
-→ Sentiment Analyzer (VADER)  
-→ Rule-based Chaos Adjustment  
-→ LLM Generation  
-→ Stateful UI Update  
+↓  
+Sentiment Scoring (VADER)  
+↓  
+Deterministic Intensity Scaling  
+↓  
+LLM Prompt Conditioning  
+↓  
+State Update + UI Rendering  
+```
+### What This Demonstrates
 
-This demonstrates:
 - Hybrid ML + LLM orchestration
-- Stateful reactive design
-- Controlled prompt conditioning
-- Modular separation of concerns
+- Stateful reactive system design
+- Controlled prompt engineering
+- Deterministic influence over generative outputs
+- Modular system architecture
 
 ---
 
-## 😊 Tab 2 — Sentiment Analyzer
+## 😊 Module 2 — Sentiment Analysis Engine
 
-Standalone sentiment analysis interface using VADER.
+Standalone lexicon-based sentiment analysis using VADER.
 
 Features:
-- Real-time sentiment classification
+- Real-time polarity detection
 - Confidence scoring
-- Deterministic local processing (no API calls)
+- Fully local deterministic processing
 
 ---
 
-## 📊 Tab 3 — Data Explorer
+## 📊 Module 3 — Data Intelligence Toolkit
 
-Upload a CSV file and:
+Upload a CSV file to:
+
 - Inspect dataset structure
 - View summary statistics
 - Generate basic visualizations
 
 Demonstrates:
-- File handling in Streamlit
-- Data visualization
-- Interactive UI controls
+- File ingestion pipelines
+- Data exploration workflows
+- Interactive visualization in Streamlit
 
 ---
 
 ## 🏗 Project Structure
-
 ```text
-
 ai_playground/
 │
 ├── app.py
 ├── requirements.txt
 │
 └── utils/
-├── chaos.py
-└── sentiment.py
+    ├── chaos.py
+    └── sentiment.py
 ```
-
 ---
 
 ## ⚙️ Technologies Used
@@ -88,7 +80,7 @@ ai_playground/
 - Python
 - Streamlit
 - OpenAI API
-- VADER Sentiment
+- VADER Sentiment Analysis
 - Pandas
 - Matplotlib
 
@@ -96,32 +88,35 @@ ai_playground/
 
 ## 🧠 Design Philosophy
 
-This project intentionally separates:
+The system follows a layered architecture:
 
-- UI Layer (`app.py`)
-- Sentiment Logic (`sentiment.py`)
-- LLM Generation (`chaos.py`)
+- **UI Layer**
+  Streamlit page modules under `/pages/` handle layout, interaction, and session state.
 
-The system follows a reactive pipeline model rather than an autonomous agent design, prioritizing determinism and explainability.
+- **Logic Layer**
+  Reusable AI components under `/utils/`, including:
+  - `sentiment.py` — deterministic sentiment scoring
+  - `ll_engine.py` — LLM prompt conditioning and response generation
+
+- **Presentation Layer**
+  Shared styling utilities (`style.py`) isolate visual concerns from business logic.
+
+This separation enforces modularity, clarity of responsibility,
+and controlled interaction between deterministic ML and generative AI.
 
 ---
 
 ## 🚀 Future Improvements
 
-- Chaos decay mechanism
-- Emotion-aware response styles
-- Conversation memory summarization
-- Enhanced visualization in Data Explorer
-- User session persistence
+- Intensity decay mechanism
+- Emotion-style response switching
+- Conversation summarization memory
+- Enhanced data visualization
+- Persistent session storage
 
 ---
 
 ## 👤 Author
 
-Built as part of hands-on experimentation with Streamlit and applied AI system design.
-
-## 🔥 Chaos Reactor Preview
-
-![Chaos Reactor - Initial State](assets/chaos-reactor.png)
-
-![Chaos Reactor - Example Response](assets/bored-chaos-reactor.png)
+Built as part of hands-on experimentation with applied AI
+system design and Streamlit interface engineering.

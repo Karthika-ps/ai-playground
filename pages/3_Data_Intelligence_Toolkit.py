@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-from utils.style import inject_global_style
+from utils.style import apply_global_style
 
 st.set_page_config(page_title="Data Intelligence Toolkit", layout="wide")
-inject_global_style()
+apply_global_style()
 
 st.markdown("## 📊 Data Intelligence Toolkit")
 st.caption("Interactive dataset inspection and visualization.")
