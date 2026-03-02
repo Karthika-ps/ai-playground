@@ -66,12 +66,19 @@ Demonstrates:
 ```text
 ai_playground/
 │
-├── app.py
+├── app.py                  # Root entry (bootstrap)
 ├── requirements.txt
 │
+├── pages/
+│   ├── 1_Emotion_Amplification_Engine.py
+│   ├── 2_Sentiment_Analysis_Engine.py
+│   └── 3_Data_Intelligence_Toolkit.py
+│
 └── utils/
-    ├── chaos.py
-    └── sentiment.py
+    ├── sentiment.py        # Deterministic sentiment scoring
+    ├── ll_engine.py        # LLM prompt conditioning + generation
+    └── style.py            # Shared styling utilities
+
 ```
 ---
 
